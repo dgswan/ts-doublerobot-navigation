@@ -12,7 +12,7 @@
   </include>
 
   <!-- AMCL -->
-  <include file="$(find turtlebot3_navigation)/launch/amcl.launch"/>
+  <include file="$(find mapless_turtlebot3_navigation)/launch/amcl.launch"/>
 
   <!-- SLAM: Gmapping, Cartographer, Hector, Karto, Frontier_exploration, RTAB-Map -->
   <include file="$(find turtlebot3_slam)/launch/turtlebot3_$(arg slam_methods).launch">
@@ -46,4 +46,10 @@
     <node pkg="rviz" type="rviz" name="rviz" required="true"
           args="-d $(find turtlebot3_navigation)/rviz/turtlebot3_navigation.rviz"/>
   </group>
+
+  <!-- rosbridge -->
+  <include file="$(find rosbridge_server)/launch/rosbridge_websocket.launch" > 
+     <arg name="port" value="8080"/>
+  </include>
+
 </launch>
