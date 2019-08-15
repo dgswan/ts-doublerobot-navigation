@@ -1,8 +1,8 @@
 <?xml version="1.0"?>
 <package format="2">
-  <name>mapless-turtlebot3-navigation</name>
+  <name>mapless_turtlebot3_navigation</name>
   <version>0.0.0</version>
-  <description>The mapless-turtlebot3-navigation package</description>
+  <description>The mapless_turtlebot3_navigation package</description>
 
   <!-- One maintainer tag required, multiple allowed, one person per tag -->
   <!-- Example:  -->
