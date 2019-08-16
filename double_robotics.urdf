@@ -1,0 +1,99 @@
+<?xml version="1.0"?>
+<robot name="double_robotics">
+  <link name="base_link">
+    <visual>
+      <geometry>
+        <cylinder length="0.2" radius="0.13"/>
+      </geometry>
+      <origin rpy="0 1.57075 0" xyz="0 0 0.01"/>
+    </visual>
+  </link>
+  
+  <link name="right_wheel">
+    <visual>
+      <geometry>
+        <cylinder length="0.07" radius="0.15"/>
+      </geometry>
+      <origin rpy="0 1.57075 0" xyz="0 0 0"/>
+    </visual>
+  </link>
+
+  <joint name="base_to_right_wheel" type="fixed">
+    <parent link="base_link"/>
+    <child link="right_wheel"/>
+    <origin xyz="0.13 0 0"/>
+  </joint>
+  
+  <link name="left_wheel">
+    <visual>
+      <geometry>
+        <cylinder length="0.07" radius="0.15"/>
+      </geometry>
+      <origin rpy="0 1.57075 0" xyz="0 0 0"/>
+    </visual>
+  </link>
+
+  <joint name="base_to_left_wheel" type="fixed">
+    <parent link="base_link"/>
+    <child link="left_wheel"/>
+    <origin xyz="-0.13 0 0"/>
+  </joint>
+  
+  <link name="stick">
+    <visual>
+      <geometry>
+        <cylinder length="0.68" radius="0.025"/>
+      </geometry>
+    </visual>
+  </link>
+
+  <joint name="base_to_stick" type="fixed">
+    <parent link="base_link"/>
+    <child link="stick"/>
+    <origin xyz="0 0 0.45"/>
+  </joint>
+  
+  <link name="ipad">
+    <visual>
+      <geometry>
+        <box size="0.1668 0.01 0.2476"/>
+      </geometry>
+    </visual>
+  </link>
+
+  <joint name="stick_to_ipad" type="fixed">
+    <parent link="stick"/>
+    <child link="ipad"/>
+    <origin xyz="0 0.03 0.35"/>
+  </joint>
+  
+  <link name="audio">
+    <visual>
+      <geometry>
+        <cylinder length="0.03" radius="0.025"/>
+      </geometry>
+      <origin rpy="1.57075 1.57075 0" xyz="0 0 0"/>
+    </visual>
+  </link>
+
+  <joint name="stick_to_audio" type="fixed">
+    <parent link="stick"/>
+    <child link="audio"/>
+    <origin xyz="0 0.04 0.19"/>
+  </joint>
+  
+  <link name="camera">
+    <visual>
+      <geometry>
+        <box size="0.08 0.01 0.04"/>
+      </geometry>
+    </visual>
+  </link>
+
+  <joint name="ipad_to_camera" type="fixed">
+    <parent link="ipad"/>
+    <child link="camera"/>
+    <origin xyz="0 0 0.14"/>
+  </joint>
+</robot>
+
