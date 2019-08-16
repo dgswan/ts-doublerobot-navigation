@@ -35,6 +35,12 @@ $ apt-get install ros-melodic-dwa-local-planner
 $ apt-get install ros-melodic-rosbridge-server
 $ roslaunch mapless_turtlebot3_navigation mapless_turtlebot3_navigation.launch
 ```
+### How to run urdf-file
+
+```sh
+export LC_NUMERIC="en_US.UTF-8"
+roslaunch urdf_tutorial display.launch model:=/path/to/file/double_robotics.urdf
+```
 
 ### How to set a goal to move to
 
