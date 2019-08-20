@@ -27,13 +27,13 @@ $ apt-get install ros-melodic-turtlebot3-*
 $ echo 'export TURTLEBOT3_MODEL=waffle' >> ~/.bashrc
 $ source ~/.bashrc
 $ cd ~/catkin_ws/src
-$ git clone https://github.com/LebedkoDmitry/mapless-turtlebot3-navigation.git
+$ git clone https://github.com/LebedkoDmitry/ts-doublerobot-navigation.git
 $ cd ..
 $ catkin_make
 $ apt-get install ros-melodic-slam-gmapping
 $ apt-get install ros-melodic-dwa-local-planner
 $ apt-get install ros-melodic-rosbridge-server
-$ roslaunch mapless_turtlebot3_navigation mapless_turtlebot3_navigation.launch
+$ roslaunch ts_doublerobot_navigation ts_doublerobot_navigation.launch
 ```
 ### How to run urdf-file
 

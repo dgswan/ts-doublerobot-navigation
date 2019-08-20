@@ -1,13 +1,13 @@
 <?xml version="1.0"?>
 <package format="2">
-  <name>mapless_turtlebot3_navigation</name>
+  <name>ts_doublerobot_navigation</name>
   <version>0.0.0</version>
-  <description>The mapless_turtlebot3_navigation package</description>
+  <description>The ts_doublerobot_navigation package</description>
 
   <!-- One maintainer tag required, multiple allowed, one person per tag -->
   <!-- Example:  -->
   <!-- <maintainer email="jane.doe@example.com">Jane Doe</maintainer> -->
-  <maintainer email="ros@todo.todo">ros</maintainer>
+  <maintainer email="lebedko.dmitrii@gmail.com">Dmitry Lebedko</maintainer>
 
 
   <!-- One license tag required, multiple allowed, one license per tag -->
