@@ -1,6 +1,6 @@
-# Mapless Turtlebot3 Navigation
+# TS Double Robot Navigation
 
-Mapless Turtlebot3 Navigation is a [ROS](http://www.ros.org/) package developed to design a robot that is able to navigation on its own. The primary target robot is Double 2 by [Double Robotics](https://www.doublerobotics.com).
+TS Double Robot Navigation is a [ROS](http://www.ros.org/) package developed to power Double 2 Robot by [Double Robotics](https://www.doublerobotics.com) to avoid obstacles and in further perspective to navigate autonomously.
 
 ## ROS target version
 
